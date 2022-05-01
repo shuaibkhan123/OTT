@@ -1,0 +1,10 @@
+{
+    "emmet.preferences": {
+    
+    },
+    "kite.enableSnippets": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "kite.startKiteEngineOnStartup": true,
+    "kite.enableOptionalCompletionsTriggers": true,
+    "kite.developerMode": true
+}

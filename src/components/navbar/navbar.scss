@@ -1,0 +1,170 @@
+.navbar
+{   
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background:linear-gradient(to top, transparent 0%, rgb(0,0,0,0.8) 95% );
+    
+    &.scrolled
+    {
+        background-color: var(--main-color);
+    }
+
+    .container
+    {
+        padding: 0px 43px 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        .left
+        {
+            display: flex;
+            align-items:center;
+            img
+            {
+                height: 25.3px;
+                padding-right: 40px;
+            }
+            span
+            {
+                cursor: pointer;
+                margin-right:17px;
+                font-size: 14.5px;
+            }
+            
+        } 
+        .right
+        {
+            display: flex;
+            align-items:center;
+            span 
+            {
+                font-size: 14.5px;
+                cursor: pointer;
+            }
+
+            img
+            {
+                width:27px;
+                height:26px;
+                border-radius: 2px;
+                object-fit:cover;
+                cursor: pointer;
+            }
+            .icon
+            {
+                cursor: pointer;
+                
+            }
+            #srch
+            {
+                margin:0px 15px;
+                font-size:25px;
+            }
+            #notif
+            {
+                margin: 0px 17px;
+                font-size: 30px;
+
+            }
+            #ADD
+            {
+                margin-left:3px;
+            }
+
+            .note
+            {
+                
+                .n_options
+                {
+                    display: none;
+                    background-color: black;
+                    opacity: 0.8;
+                    margin-top:22px;
+                    margin-right: 50px;
+                    padding-left: 50px;
+                }
+                span
+                {
+                    img 
+                    {
+                       justify-content: left;
+                    }
+                    p
+                    {
+                        font-size: smaller;
+                        justify-content: right;
+                        
+                    }
+                    
+
+                }
+                &:hover
+                {
+                    .n_options
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .profile
+            {
+                .options
+                {
+                    display: none;
+                    background-color: rgb(0, 0, 0);
+                    opacity: 0.8;
+                    margin-top: 22px;
+                    
+                }
+                span 
+                {
+                    padding: 20px;
+                    cursor: pointer;
+                    border-style: none none solid;
+                    border-color: rgb(78, 78, 78)
+                }
+                &:hover
+                {
+                    .options
+                    {
+                        display:flex;
+                        flex-direction: column;
+                        position: absolute;
+                        
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
