@@ -31,6 +31,7 @@
             {
                 height: 25.3px;
                 padding-right: 40px;
+                cursor: pointer;
             }
             span
             {
@@ -57,6 +58,7 @@
                 border-radius: 2px;
                 object-fit:cover;
                 cursor: pointer;
+                margin-left: 17px;
             }
             .icon
             {
@@ -70,7 +72,7 @@
             }
             #notif
             {
-                margin: 0px 17px;
+                margin: 0px 0px 0px 17px;
                 font-size: 30px;
 
             }
@@ -79,67 +81,48 @@
                 margin-left:3px;
             }
 
-            .note
-            {
+            
+            // .note
+            // {
                 
-                .n_options
-                {
-                    display: none;
-                    background-color: black;
-                    opacity: 0.8;
-                    margin-top:22px;
-                    margin-right: 50px;
-                    padding-left: 50px;
-                }
-                span
-                {
-                    img 
-                    {
-                       justify-content: left;
-                    }
-                    p
-                    {
-                        font-size: smaller;
-                        justify-content: right;
+            //     .n_options
+            //     {
+            //         display: none;
+            //         background-color: black;
+            //         opacity: 0.8;
+            //         margin-top:22px;
+            //         margin-right: 50px;
+            //         padding-left: 50px;
+            //     }
+            //     span
+            //     {
+            //         img 
+            //         {
+            //             justify-content: left;
+            //         }
+            //         p
+            //         {
+            //             font-size: smaller;
+            //             justify-content: right;
                         
-                    }
+            //         }
                     
 
-                }
-                &:hover
-                {
-                    .n_options
-                    {
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                    }
-                }
-            }
-
-            
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //     }
+            //     &:hover
+            //     {
+            //         .n_options
+            //         {
+            //             display: flex;
+            //             flex-direction: column;
+            //             position: absolute;
+            //         }
+            //     }
+            // }
 
             .profile
             {
+                
                 .options
                 {
                     display: none;
@@ -147,13 +130,13 @@
                     opacity: 0.8;
                     margin-top: 22px;
                     
+                    
                 }
                 span 
                 {
                     padding: 20px;
                     cursor: pointer;
-                    border-style: none none solid;
-                    border-color: rgb(78, 78, 78)
+                    border-color: rgb(78, 78, 78);
                 }
                 &:hover
                 {
@@ -166,6 +149,28 @@
                     }
                 }
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
             
         }
 

@@ -1,0 +1,125 @@
+.featured
+{
+    height: 97vh;
+    position: relative;
+
+    .category
+    {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        font-size: 40px;
+        font-weight: 550;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        select
+        {
+            display: grid;
+            cursor: pointer;
+            background-color: black;
+            border: 1px solid white;
+            font-weight: 500;
+            color: white;
+            margin-left: 40px;
+            padding: 5px;
+            
+            
+            &:hover{
+                background-color: rgba(150, 150, 150, 0.2);
+            }
+            
+        }
+        
+        
+    }
+    
+    
+
+    img 
+    {
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+        
+    }
+    .info
+    {
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 100px;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+
+        img 
+        {
+            width: 400px;
+            
+        }
+        .desc
+        {
+            margin: 20px 0px;
+        }
+        .butt
+        {
+            display: flex;
+            button
+            {
+                cursor:pointer;
+                //padding:0px 20px;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                margin-right: 10px;
+                
+                
+                
+            }
+            #infoOut
+            {
+                //position: absolute;
+                font-size: 30px;
+                padding-right: 10px;
+            }
+            .more
+            {
+                background-color: rgba(150, 150, 150, 0.5) ;
+                color: white;
+                padding: 0px 26px 0px 20px;
+                font-weight: 550;
+                &:hover
+                {
+                    background-color: rgba(150, 150, 150, 0.2);
+                }
+            }
+    
+            #playarrow
+            {
+                font-size: 45px;
+                padding-right: 3px;
+                //margin: 0%;
+                //padding: 0%;
+                //position: absolute;
+            }
+            .play
+            {
+                padding: 0px 26px 0px 10px;
+                font-weight: 600;
+                background-color:white;
+                &:hover
+                {
+                    background-color: rgba(255, 255, 255, 0.7);
+                }
+            }
+            
+            
+
+        }
+    }
+}

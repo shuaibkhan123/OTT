@@ -28,10 +28,10 @@ const Navbar = () => {
             <div className="right">
                 <SearchRounded className="icon" id="srch"/>
                 <span>Kids</span>
-                <span className="note">
+                {/*<span className="note">*/}
 
                     <Notifications className="icon" id="notif"/>
-                        <div className="n_options">
+                        {/* <div className="n_options">
                             <span>
                                 <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg" alt="" />
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti inventore unde voluptas, in dolorum fugiat? Nulla libero, minima ab saepe adipisci esse beatae sit sint, facilis illum enim ullam!</p>
@@ -40,15 +40,15 @@ const Navbar = () => {
                                 <img src="https://love-shayari.co/wp-content/uploads/2021/10/sun-rise.jpg" alt="" />
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt, quidem voluptate pariatur amet distinctio ducimus modi. Vero dignissimos, repellat qui quia rerum iusto optio nemo animi necessitatibus corrupti dolorum.</p>
                             </span>
-                        </div>
-                </span>
+                        </div> 
+                </span>*/}
 
                 
                 <div className="profile">
                     <img src="https://static.wikia.nocookie.net/925fa2de-087e-47f4-8aed-4f5487f0a78c/scale-to-width/755" alt="" />
                     <ArrowDropDown  className="icon" id="ADD"  />
                     <div className="options">
-                        <span >Settings</span>
+                        <span>Settings</span>
                         <span>LogOut</span>
                     </div>
                 </div>
