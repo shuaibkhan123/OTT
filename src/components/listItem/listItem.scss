@@ -14,69 +14,155 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
-
     }
+
+    video
+    {
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+
+
     &:hover
     {
         position:absolute;
         width: 342px;
         height: 370px;
-        background-color: rgb(29, 29, 29);
+        background-color: rgb(23, 23, 23);
         border-radius: 8px;
         box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
         -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
         -moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
         top: -140px;
+       // transition-delay: .5s;
+        //transition-timing-function: ease-in-out;
         
         img 
         {
             height: 55%;
         }
     }
-    
+    .itemInfo
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        .itemInfoTop
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom:15px;
+            
+            span
+            {
+                margin-right: 9px;
+            }
+            #match
+            {
+                color: rgb(45, 203, 45);
+                font-weight: 700;
+            }
+            #time
+            {
+                font-size: medium;
+            }
+            .limit
+            {
+                border: 1px solid rgb(190, 190, 190);
+                padding: 0px 5px;
+                
+            }
+            #res
+            {
+                font-size: 11px;
+                font-weight: 100;
+                border: 1px solid rgb(190, 190, 190);
+                border-radius: 3px;
+                padding: 0px 5px;
+                
+            }
+        }
+    }
+    .genre
+    {
+        padding-left: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     .icons
     {
-        padding: 0px 15px 0px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 68px;
-        
-        
-
+        margin-bottom: 10px;
         .leftIcon
         {
             display: flex;
             align-items: center;
             cursor: pointer;
+            
             #play
             {
-                font-size: 45px;
-                color: rgb(255, 255, 255);
+                margin-right: 7px;
+                font-size: 30px;
+                padding:3px;
+                color: rgb(0, 0, 0);
+                border: solid;
+                background-color: white;
+                border-radius: 50%;
                 &:hover
                 {
-                    color: rgb(222, 222, 222);
+                    background-color: rgb(222, 222, 222);
                 }
             }
         
             #plus
             {
-                font-size: 45px;
-                color: rgb(150, 150, 150);
+                font-size: 30px;
+                padding: 3px;
+                margin-right: 7px;
+                border: solid rgb(150, 150, 150);
+                border-radius: 50%;
+                background-color: rgba(190, 190, 190, 0.08);
+                color: white;
                 &:hover
                 {
-                    color:white;
+                    background-color:rgba(190, 190, 190, 0.151);
+                    border: solid white;
                 }
 
                 
             }
             #recommend
             {
-                font-size: 45px;
-                color: rgb(150, 150, 150);
+                font-size: 20px;
+                padding: 9px;
+                border: solid rgb(150, 150, 150);
+                border-radius: 50%;
+                background-color: rgba(190, 190, 190, 0.08);
+                color: white;
+                
                 &:hover
                 {
-                    color:white;
+                    background-color:rgba(190, 190, 190, 0.151);
+                    border: solid white;
                 }
 
             }
@@ -91,11 +177,17 @@
             
             #expand
             {
-                font-size: 43px;
-                color: rgb(150, 150, 150);   
+                font-size: 26px;
+                padding: 6px;
+                color: white;
+                border: solid rgb(150, 150, 150);
+                border-radius: 50%;
+                background-color: rgba(190, 190, 190, 0.08);
                 &:hover
                 {
-                    color:white;
+                    background-color:rgba(190, 190, 190, 0.151);
+                    border: solid white;
+                    
                 }
 
             }
