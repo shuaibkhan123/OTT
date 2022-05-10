@@ -1,0 +1,86 @@
+.login
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 110%), url("https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/8e07a611-4ced-4d4e-81e6-d278862c952b/IN-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .top
+    {
+        .wrapper
+        {
+            padding: 26px 63px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .logo
+            {
+                height: 35px;
+            }
+    
+            
+        }
+    }
+    .container
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        form 
+        {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            input 
+            {
+                height: 40px;
+                border-radius: 5px;
+                background-color: grey;
+                color: white;
+                padding-left: 10px;
+
+                &::placeholder
+                {
+                    color: lightgrey;
+                }
+            }
+            button 
+            {
+                height: 40px;
+                border-radius: 5px;
+                background-color: red;
+                color: white;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            span 
+            {
+                color: lightgray;
+                b 
+                {
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
