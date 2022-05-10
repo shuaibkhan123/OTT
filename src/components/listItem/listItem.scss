@@ -1,0 +1,106 @@
+.listItem
+{
+    width: 225px;
+    height: 120px;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    margin-right: 5.5px;
+    overflow: hidden;
+    cursor:pointer;
+    color: white;
+    
+    img 
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+    &:hover
+    {
+        position:absolute;
+        width: 342px;
+        height: 370px;
+        background-color: rgb(29, 29, 29);
+        border-radius: 8px;
+        box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
+        -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
+        -moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.69);
+        top: -140px;
+        
+        img 
+        {
+            height: 55%;
+        }
+    }
+    
+    .icons
+    {
+        padding: 0px 15px 0px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        
+        
+
+        .leftIcon
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            #play
+            {
+                font-size: 45px;
+                color: rgb(255, 255, 255);
+                &:hover
+                {
+                    color: rgb(222, 222, 222);
+                }
+            }
+        
+            #plus
+            {
+                font-size: 45px;
+                color: rgb(150, 150, 150);
+                &:hover
+                {
+                    color:white;
+                }
+
+                
+            }
+            #recommend
+            {
+                font-size: 45px;
+                color: rgb(150, 150, 150);
+                &:hover
+                {
+                    color:white;
+                }
+
+            }
+
+
+        }
+        .rightIcon
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            
+            #expand
+            {
+                font-size: 43px;
+                color: rgb(150, 150, 150);   
+                &:hover
+                {
+                    color:white;
+                }
+
+            }
+        }
+
+
+    }
+}
