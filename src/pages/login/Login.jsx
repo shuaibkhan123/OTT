@@ -21,7 +21,7 @@ export default function Register() {
                         New to Netflix? <b>Sign Up now.</b>
                     </span>
                     <small>
-                        This page is protected by google reCAPTCHA to ensure you're not a bot.<b>Learn more</b>.
+                        This page is protected by google reCAPTCHA to ensure you're not a bot.<b> Learn more</b>.
                     </small>
 
                 </form>
