@@ -1,6 +1,8 @@
 import { ArrowDropDown, Notifications, SearchRounded } from "@mui/icons-material"
 import {useState} from "react";
 import "./navbar.scss"
+import {Link} from "react-router-dom";
+
 
 
 
@@ -11,17 +13,28 @@ const Navbar = () => {
         setIsScrolled(window.pageYOffset === 0 ? false : true);
         return () =>(window.onscroll=null);
     };
-    console.log(isScrolled);
+    //console.log(isScrolled);
     return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
         <div className="container">
             <div className="left">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-netflix_2015-logo.svg.png" alt=""/>
-                <span>Home</span>
-                <span>TV Shows</span>
-                <span>Movies</span>
+                <Link to="/" className="link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-netflix_2015-logo.svg.png" alt=""/>
+                </Link>    
+                <Link to="/" className="link">
+                    <span>Home</span>
+                </Link>
+                
+                <Link to="/series" className="link">
+                    <span>TV Shows</span>
+                </Link>
+                <Link to="/movie" className="link">
+                    <span>Movies</span>
+                </Link>
                 <span>New & Popular</span>
                 <span>My List</span>
+                
+
             </div>
 
 
@@ -47,9 +60,11 @@ const Navbar = () => {
                 <div className="profile">
                     <img src="https://static.wikia.nocookie.net/925fa2de-087e-47f4-8aed-4f5487f0a78c/scale-to-width/755" alt="" />
                     <ArrowDropDown  className="icon" id="ADD"  />
-                    <div className="options">
+                    <div className="options" id="opt">
                         <span>Settings</span>
                         <span>LogOut</span>
+                    
+
                     </div>
                 </div>
 

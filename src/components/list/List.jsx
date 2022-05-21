@@ -1,8 +1,10 @@
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from "@mui/icons-material"
 import "./list.scss"
 import ListItem from "../listItem/ListItem"
-import { useRef, useState } from "react"
-export default function List() {
+import { useRef, useState, useEffect } from "react"
+//import axios from "axios";
+
+export default function List({title, /*fetchUrl*/}) {
 
     const [isMoved, setIsMoved] = useState(0);
     const [slideNumber, setSlideNumber]= useState(0);
@@ -24,9 +26,20 @@ export default function List() {
         
 
     }; 
+
+    /*const [movies, setMovies] = useState([]);
+    useEffect(()=>{
+        async function fetchData(){
+            const request = await axios.get(fetchUrl);
+            console.log(request);
+            return request;
+        }
+        fetchData();
+    }, []);
+    */
     return (
         <div className="list">
-            <span className="listTitle">Continue Watching</span>
+            <span className="listTitle">{title}</span>
             <div className="wrapper">
                 <ArrowBackIosOutlined className="sliderArrow left" onClick={() => handleClick("left")} style={{display: !isMoved && "none"}} />
                 <div className="container" ref={listRef}>

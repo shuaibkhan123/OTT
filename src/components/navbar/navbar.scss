@@ -123,17 +123,24 @@
 
             .profile
             {
-                
+                //transition: 0.2s;
+                //transition: all 0s ease 1s; /*delay 1s*/
+                //visibility: hidden;
                 .options
                 {
                     display: none;
                     background-color: rgb(0, 0, 0);
                     opacity: 0.8;
-                    margin-top: 22px;
+                    margin-top: 18px;
+                    //position: absolute;
+                    //transition: 0.2s;
+                    //transition: all 0s ease 1s;
+                    //visibility: hidden;
+                    //transition: all 0s ease 1s; /*delay 1s*/
                     
                     
                 }
-                span 
+                span    
                 {
                     padding: 20px;
                     cursor: pointer;
@@ -141,13 +148,23 @@
                 }
                 &:hover
                 {
+                    //transition-delay: 0s;
+                    //visibility: visible;
+                    //transition-delay: 3s;
                     .options
                     {
+                        //display: block;
                         display:flex;
                         flex-direction: column;
                         position: absolute;
-                        
+                        cursor: pointer;
+                        //transition: 0.2s;
+                        //transition-delay: 10s;
+                        //visibility: visible;
                     }
+            
+            
+                    
                 }
             }
 

@@ -1,8 +1,10 @@
-import {Add, AddCircleOutlineOutlined, CheckCircleOutlined, ExpandCircleDownOutlined, ExpandMore, PlayArrow, PlayCircleFilledWhite, RecommendOutlined, ThumbUpOffAlt} from "@mui/icons-material"
+import {Add, ExpandMore, PlayArrow, ThumbUpOffAlt} from "@mui/icons-material"
 import "./listItem.scss"
 import ST from "./StrangerThings_Header_940x470.jpg"
 import strngr from "./strnger.mp4"
 import { useState } from "react";
+import {Link} from "react-router-dom";
+
 export default function Listitem({index}) {
         const [isHovered, setIsHovered] = useState(false);
         const trailer = strngr;
@@ -15,7 +17,9 @@ export default function Listitem({index}) {
                     <div className="itemInfo">
                         <div className="icons">
                             <div className="leftIcon">
-                                <PlayArrow id="play"  />
+                                <Link to="/watch" className="link">
+                                    <PlayArrow id="play"  />
+                                </Link>    
                                 <Add id="plus"/>
                                 <ThumbUpOffAlt fontSize="small" id="recommend"/>
                             </div>
