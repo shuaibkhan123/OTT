@@ -1,2 +1,2 @@
 # OTT
-This is a project involving our best try at making a working OTT Platform model with web player and DBMS.
+This is a project involving my best attempt on developing a working OTT Platform model (similar to Netflix) with web player and Nosql support.
