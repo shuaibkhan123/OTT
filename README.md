@@ -1,4 +1,4 @@
-# OTT
+# OTT (Netflix Clone)
 This is a project involving my best attempt on developing a working OTT Platform model (similar to Netflix) with web player and Nosql support.
 
 ![Screenshot (900)](https://user-images.githubusercontent.com/68785775/220575845-bd0dd674-c913-4ce0-bc5d-962ef6f74b56.png)
