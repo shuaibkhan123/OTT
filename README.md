@@ -3,11 +3,11 @@ This is a project involving my best attempt on developing a working OTT Platform
 
 **USED MERN STACK:**
 
--MongoDB
--Express(.js)
--React(.js)
--Node.js
--Sass
+- MongoDB
+- Express(.js)
+- React(.js)
+- Node.js
+- Sass
 
 ![Screenshot (900)](https://user-images.githubusercontent.com/68785775/220575845-bd0dd674-c913-4ce0-bc5d-962ef6f74b56.png)
 ![Screenshot (902)](https://user-images.githubusercontent.com/68785775/220575978-01e380b6-50a0-482e-9082-692f9b107049.png)
